@@ -1,0 +1,229 @@
+:root {
+  --primary: rgb(73, 21, 69);
+
+  --textLight: #1be5fe;
+
+  --fontVeryBig: 58px;
+  --fontBig: 48px;
+  --fontNormal: 32px;
+  --fontSmall: 20px;
+
+  --spaceNormal: 50px;
+}
+
+@media screen and (max-width: 668px) {
+  :root {
+    --fontVeryBig: 34px;
+    --fontBig: 28px;
+    --fontNormal: 22px;
+    --fontSmall: 16px;
+
+    --spaceNormal: 30px;
+  }
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(359deg, #222146, #272128);
+  color: white;
+  overflow: hidden;
+}
+
+#canvas-container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(78, 78, 78);
+}
+
+ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.title {
+  color: white;
+  font-size: 46px;
+  font-weight: bold;
+  background: #000000a6;
+  padding: 30px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+#go {
+  display: none;
+  position: relative;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.email-form {
+  position: absolute;
+  top: 50%;
+  right: 300px;
+  transform: translateY(-50%);
+}
+
+.email-form > div {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+.email-form input {
+  background: #a6a2a28a;
+  border: 7px solid white;
+  font-size: 32px;
+  box-shadow: 0 0 10px 2px white;
+  padding: 10px;
+  outline: none;
+}
+
+.email-form input::placeholder {
+  color: white;
+}
+
+.submit:active {
+  background-color: rgb(68, 212, 68);
+  box-shadow: 0 0 10px 3px rgb(68, 212, 68);
+}
+
+button,
+.button {
+  position: absolute;
+  background: #ffffff14;
+  color: white;
+  border: 4px solid white;
+  border-radius: 6px;
+  padding: 20px 30px;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+button > span {
+  font-size: 32px !important;
+  vertical-align: middle;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+.bottom {
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.call-to-action-btn {
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.back {
+  top: 100px;
+  left: 100px;
+}
+
+.carouesl-btns {
+  top: 40%;
+}
+
+.carouesl-btns.nxt {
+  right: min(20vw, 200px);
+}
+
+.watch-trailer {
+  top: 100px;
+  right: 100px;
+}
+
+.credits-btn {
+  bottom: 100px;
+  right: 100px;
+}
+
+.carouesl-btns.prev {
+  left: min(20vw, 200px);
+}
+
+button.bottom:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.call-to-action-btn:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+
+button.bottom:active {
+  transform: translateX(-50%) scale(0.9);
+}
+
+.call-to-action-btn:active {
+  transform: translateX(-50%) scale(0.9);
+}
+
+.bottom-left {
+  bottom: 100px;
+  left: 100px;
+}
+
+.bottom-right {
+  bottom: 100px;
+  right: 100px;
+}
+
+.center-left {
+  top: 50%;
+  left: 100px;
+}
+
+.center-right {
+  top: 50%;
+  right: 100px;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.home-btn {
+  top: 70px;
+  left: 70px;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.home-btn:hover {
+  opacity: 1;
+}
+
+iframe {
+  background-color: rgb(122, 118, 118);
+}
